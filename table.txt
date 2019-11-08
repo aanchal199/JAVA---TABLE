@@ -1,0 +1,16 @@
+import javax.swing.*;
+class Table
+{
+public static void main(String args[])
+{
+JFrame F = new JFrame("TABLE");
+String row[] [] = {{ "1" , "Ram" , "10000" } , { "2" , "Mohan" , "21000" }};
+String col[] = {"ID","NAME","SALARY"};
+JTable T = new JTable(row , col);
+JScrollPane s = new JScrollPane(T);
+F.add(s);
+F.setSize(300,300);
+F.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+F.setVisible(true);
+}
+}
